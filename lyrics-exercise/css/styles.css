@@ -91,13 +91,11 @@ p {
 }
 
 #foot {
-    text-align: right;
-    margin-right: 10px;
+    text-align: center;
 }
 
 #foot1 {
-    text-align: left;
-    margin-left: 5px;
-    margin-top: 20px;
+    text-align: center;
+    margin-top: 18px;
 }
 
