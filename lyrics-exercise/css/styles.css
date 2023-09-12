@@ -89,3 +89,15 @@ p {
     margin-left: auto;
     margin-right: auto;
 }
+
+#foot {
+    text-align: right;
+    margin-right: 10px;
+}
+
+#foot1 {
+    text-align: left;
+    margin-left: 5px;
+    margin-top: 20px;
+}
+
