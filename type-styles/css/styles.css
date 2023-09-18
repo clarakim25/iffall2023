@@ -1,0 +1,82 @@
+html {
+    background-color: floralwhite;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 24px;
+    margin: 5% 10%;
+    color: rebeccapurple;
+}
+
+h2 {
+    font-size: 1.2em;
+    margin-bottom: 1.5em;
+}
+
+h4 {
+    font-weight: normal;
+    font-size: 15px; 
+}
+
+p {
+    margin-block: 0.5em;
+}
+
+code {
+    color: mediumseagreen;
+    font-size: 0.8em;
+}
+
+.text {
+    text-indent: 3rem;
+}
+
+.normal {
+    font-weight: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    text-decoration: none;
+    text-transform: none;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.letter-spacing-03em {
+    letter-spacing: 0.3em;
+}
+
+.letter-spacing--006em {
+    letter-spacing: -0.06em;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.line-through {
+    text-decoration: line-through;
+}
+
+.overline {
+    text-decoration: overline;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.lowercase {
+    text-transform: lowercase;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
