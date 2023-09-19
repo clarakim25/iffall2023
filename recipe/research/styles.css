@@ -1,0 +1,110 @@
+html {
+    font-family: "monotype-grotesque", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 7%;
+    background-color: bisque;
+}
+
+.text {
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+.inst {
+    line-height: 1.7em;
+}
+
+input[type="checkbox"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    border: 2px solid #000;
+    outline: none;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #ff9900; 
+}
+
+/* Style the labels for the checkboxes */
+label {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+.title {
+    text-align: center;
+}
+.ing {
+    margin: 0px;
+}
+
+.pumpkin {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+  }
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+/* Create three equal columns that sits next to each other */
+.column {
+  flex: 20%;
+  padding: 0px;
+}
+
+.churro {
+    display: block;
+    width: 120%;
+}
+
+.row2 {
+    display: flex;
+    margin-left: 5.5%;
+    margin-right: 8%;
+  }
+  
+  /* Create three equal columns that sits next to each other */
+  .column2 {
+    flex: 20%;
+    padding: 3%;
+  }
+
+.center {
+    text-align: center;
+    color: #f39201;
+    margin-bottom: -40px;
+}
+
+/* unvisited link */
+a:link {
+    color: #ff9900;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: rgb(255, 191, 0);
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: lightyellow;
+  }
+  
+  /* selected link */
+  a:active {
+    color: yellow;
+  }
