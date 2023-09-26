@@ -1,46 +1,37 @@
-/* Challenge 1: Set the margin-bottom of the header to 3rem */
 header {
     margin-bottom: 3rem;
   }
-  
-  /* Challenge 2: Set the line-height of all paragraphs to 1.6 */
+
   p {
     line-height: 1.6;
   }
-  
-  /* Challenge 3: Make the font-size of "See All..." links 0.8em and uppercase */
+
   a.see-all {
     font-size: 0.8em;
     text-transform: uppercase;
   }
-  
-  /* Challenge 4: Make the font-size of show titles 2.5rem */
+
   ul.shows h1 {
     font-size: 2.5rem;
   }
-  
-  /* Challenge 5: Make section titles uppercase and font-size 1rem */
+
   section h2 {
     text-transform: uppercase;
     font-size: 1rem;
   }
-  
-  /* Challenge 6: Make all title fonts lightweight */
+
   h1, h2 {
     font-weight: lighter;
   }
-  
-  /* Challenge 7: Make the cast images width 100% */
+
   section.cast img {
     width: 100%;
   }
-  
-  /* Challenge 8: Make each castmember element width 25% */
+
   section.cast ul li {
     width: 25%;
   }
   
-  /* Challenge 9: Add a 1px solid black border above each show */
   #game-of-thrones {
     border-top: 1px solid black;
   }
@@ -48,24 +39,20 @@ header {
   #unbreakable-kimmy-schmidt {
     border-top: 1px solid black;
   }
-  
-  /* Challenge 10: Make the navigation tab with .selected class bold and black */
+
   nav ul li.selected a {
     font-weight: bold;
     color: black;
   }
-  
-  /* Challenge 11: Make the castmember labels 0.8rem */
+
   section.cast div {
     font-size: 0.8rem;
   }
-  
-  /* Challenge 12: Make the actor/actress names bold */
+
   section.cast div:nth-child(2) {
     font-weight: bold;
   }
-  
-  /* Challenge 13: Make the character names italic */
+
   section.cast div:nth-child(3) {
     font-style: italic;
   }
@@ -73,7 +60,6 @@ header {
     content: '*';
 }
 
-/* Challenge 15 */
 .seasons ul:after {
     content: '* Final Season';
     display: block;
