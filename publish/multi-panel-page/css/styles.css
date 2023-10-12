@@ -1,0 +1,159 @@
+html {
+    font-family: 'Archivo Narrow', sans-serif;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-position: center top;
+	min-height: 2399px;
+}
+
+header {
+    margin: 0;
+    text-align: center;
+    background-image: url("../img/header.jpg");
+    background-size: cover;
+    color: rgb(234, 255, 248);
+}
+
+section {
+    background-color: rgb(234, 255, 248);
+    color: rgb(140, 45, 188);
+}
+
+h1, h2, h3, p {
+    margin: 0;
+}
+h1 {
+    font-size: 80px;
+}
+
+h2 {
+    font-size: 30px;
+    line-height: 1.1;
+}
+
+h3 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 33px;
+}
+
+h4 {
+    font-size: 20px;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+.column-container {
+    width: 960px;
+    margin: auto;
+    padding-top: 39px;
+    padding-bottom: 41px;
+}
+
+header .column-container {
+    padding-top: 152px;
+    padding-bottom: 188px;
+}
+
+section.content-grid {
+    background-color: rgba(64, 0, 255, 0.35);
+    color: rgb(234, 255, 248);
+}
+
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+.float {
+    height: 300px;
+    width: 400px;
+    object-fit: cover;
+    float: right;
+    margin-left: 40px;
+    margin-bottom: 32px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 25px;
+    padding-bottom: 17px;
+}
+
+.grid {
+    padding: 0;
+    list-style-type: none
+}
+
+.grid img {
+    height: 150px;
+    width: 200px;
+    object-fit: cover;
+    float: left;
+    object-position: center;
+    display: inline;
+    margin-right: 12px;
+}
+.grid{
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.content_grid p{
+    font-size: 18px;
+    margin-block-start: -20px;
+    margin-inline: 40px;
+    padding-inline-start: 173px;
+    line-height: 25.2px;
+    letter-spacing: -0.2px;
+}
+
+ul div{
+    width: 425px;
+}
+
+li{
+    display: block;
+    float: left;
+    width: 50%;
+    padding-bottom: 22px;
+}
+
+ul{
+    padding: 0;
+}
+
+ul::after{
+    
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#s2 {
+    padding-bottom: 25px;
+}
+
+.closing-summary{
+    padding-bottom: 41px;
+}
+
+.closing-summary p{
+    width: 703px;
+    margin: auto;
+    font-size: 26px;
+    text-align: center;
+    line-height: 1.4;
+}
+
+footer {
+    padding-top: 13px;
+    font-size: 18px;
+    background-color: rgba(64, 0, 255, 0.35);
+    color: rgb(234, 255, 248);
+}
