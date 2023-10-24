@@ -1,0 +1,220 @@
+html {
+    font-family: "quasimoda", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 2rem;
+    background-color: bisque;
+}
+
+@media (max-width: 640px) {
+    html { font-size: 12px; }
+    h1 { font-size: 2rem}
+    h4 { font-size: 1.1rem}
+}
+
+@media (max-width: 425px) {
+    html { font-size: 10px; }
+    h1 { font-size: 1.5rem}
+    h4 { font-size: 0.7rem}
+}
+
+.topnav {
+    background-color:#ff9900;
+    overflow: hidden;
+    margin: 0;
+  }
+  
+.topnav a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 1rem 1rem;
+    text-decoration: none;
+  }
+  
+.topnav a:hover {
+    background-color: bisque;
+    color: #ff9900;
+  }
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.head {
+    margin: 0;
+    text-align: center;
+    color:#ff9900; 
+    text-shadow: -1.5px -1.5px 0 #000, 1.5px -1.5px 0 #000, -1.5px 1.5px 0 #000, 1.5px 1.5px 0 #000;
+    background-image: url(../img/head.png);
+    background-size: cover;
+    background-position: center;
+    padding-top: 15rem;
+    padding-bottom: 15rem;
+    line-height: 5rem
+
+}
+
+.box {
+    background-color: rgb(255, 228, 196, 0.3); 
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.information, .instructions {
+    background-color: #ff9900;
+}
+
+.info ul{
+    display: flex; 
+    width: 70%;
+    padding: 48px;
+    margin:auto
+}
+
+.info li {
+    text-align: center;
+    background-color: bisque;
+    width: 50rem;
+    list-style-type: none;
+}
+
+section {
+    background-color: bisque;
+    border-top: 2px solid black;
+    margin-bottom: -1rem;
+}
+
+
+h1 {
+    font-family: "monotype-grotesque", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 3.5rem;
+}
+
+h2 {
+    font-size: 1.75rem;
+    color: bisque;
+    margin-top: -3rem;
+}
+
+h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1rem 1rem;
+}
+
+h4 {
+    text-align: center;
+    font-size: 1.1rem;
+    padding: 0;
+}
+
+.grid {
+    padding: 0;
+    list-style-type: none
+}
+
+.grid {
+    display: grid;
+    padding: 0;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    width: 78%;
+    margin-left: 10.75%;
+    justify-items: center;
+    margin-top: 2rem;
+    margin-bottom: -2.5rem;
+}
+
+.grid img {
+    width: 110%;
+}
+
+.grid li {
+    display: block;
+    width: 25%;
+    text-align: center;
+    font-size: 0.8rem;
+}
+.grid p {
+    margin-top: -1.5rem;
+}
+
+#equip {
+    margin-bottom: 2rem;
+}
+
+ul::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+footer {
+    padding: 1rem 1rem; 
+    border-top: 2px solid black;
+    background-color: bisque;
+    text-align: center;
+}
+
+.star {
+    text-align: center;
+    color: #ff9900;
+    margin-top: 2rem;
+    padding-bottom: 1.5rem;
+}
+
+strong .text{
+    padding-right: 0.25rem;
+    font-size: 1.5rem;
+}
+
+.instruction-block {
+    width: 80%;
+    margin-left: 13.7%;
+    /* background-color: bisque; */
+}
+
+.instruction-block li {
+    display: block;
+}
+
+.block {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.text {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-right: 2rem;
+    width: 50%;
+    font-size: 1.1rem;
+}
+
+.instruction-block img {
+    width: 50%;
+    object-fit: cover;
+}
+
+em {
+    color: rgb(89, 50, 0);
+}
+
+.instructions {
+    padding-bottom: 2.5rem;
+}
+
+.prep {
+    font-size: 1.25rem;
+    margin-bottom: -1.5rem;
+}
