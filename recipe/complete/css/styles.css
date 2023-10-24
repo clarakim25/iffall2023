@@ -11,14 +11,14 @@ html {
     html { font-size: 12px; }
     h1 { font-size: 2rem}
     h4 { font-size: 1.1rem}
-    p { font-size: 0.6rem;}
+    p { font-size: 1rem;}
 }
 
 @media (max-width: 425px) {
     html { font-size: 11px; }
     h1 { font-size: 1.5rem}
-    h4 { font-size: 0.7rem}
-    p { font-size: 0.5rem;}
+    h4 { font-size: 0.8rem}
+    p { font-size: 0.8rem;}
     strong { font-size: 0.7rem;}
 }
 
@@ -254,4 +254,70 @@ em {
     .block > div {
         width: 50%;
     }
+}
+
+@media (max-width: 640px) {
+    .instruction-block {
+        width: 80%;
+        margin-left: 23%;
+        /* background-color: bisque; */
+    }
+    
+        .instructions {
+            padding: 20px;
+        }
+    
+        .block {
+            flex-direction: column-reverse;
+        }
+    
+        .text {
+            margin-top: 15px;
+        }
+    
+        .notes-content {
+            width: 100%;
+        }
+    
+        .instruction-block img {
+            display: block;
+            width: 100%;
+        }
+    
+        .block > div {
+            width: 50%;
+        }
+}
+
+@media (max-width: 425px) {
+    .instruction-block {
+        width: 80%;
+        margin-left: 19.65%;
+        /* background-color: bisque; */
+    }
+    
+        .instructions {
+            padding: 20px;
+        }
+    
+        .block {
+            flex-direction: column-reverse;
+        }
+    
+        .text {
+            margin-top: 15px;
+        }
+    
+        .notes-content {
+            width: 100%;
+        }
+    
+        .instruction-block img {
+            display: block;
+            width: 100%;
+        }
+    
+        .block > div {
+            width: 50%;
+        }
 }
