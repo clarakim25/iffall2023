@@ -178,7 +178,7 @@ strong {
 
 .instruction-block {
     width: 80%;
-    margin-left: 17%;
+    margin-left: 18.7%;
     /* background-color: bisque; */
 }
 
@@ -255,7 +255,30 @@ em {
     }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 780px) {
+
+    .ingredients h4 {
+        font-size: 0.85rem;
+        line-height: 1.3rem;
+    }
+    .ingredients p {
+        font-size: 0.75rem;
+    }
+
+    .grid {
+        width: 80%;
+        margin-left: 9.25%;
+        justify-items: center;
+        margin-top: 1rem;
+        margin-bottom: -1.5rem;
+    }
+
+    .grid img {
+        width: 130%;
+        margin-bottom: -0.8rem;
+    }
+
+    
     .instruction-block {
         width: 80%;
         margin-left: 23%;
@@ -287,10 +310,11 @@ em {
         }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 550px) {
 
     .ingredients h4 {
         font-size: 0.85rem;
+        line-height: 1.3rem;
     }
     .ingredients p {
         font-size: 0.75rem;
@@ -306,6 +330,7 @@ em {
 
     .grid img {
         width: 250%;
+        margin-bottom: -0.8rem;
     }
 
     .star {
@@ -344,23 +369,3 @@ em {
             width: 80%;
         }
 }
-
-/* unvisited link */
-a:link {
-    color: #ff9900;
-  }
-  
-  /* visited link */
-  a:visited {
-    color: rgb(255, 191, 0);
-  }
-  
-  /* mouse over link */
-  a:hover {
-    color: lightyellow;
-  }
-  
-  /* selected link */
-  a:active {
-    color: yellow;
-  }
