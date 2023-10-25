@@ -18,7 +18,7 @@ html {
     html { font-size: 11px; }
     h1 { font-size: 1.5rem}
     h4 { font-size: 0.8rem}
-    p { font-size: 0.8rem;}
+    p { font-size: 1rem;}
     strong { font-size: 0.7rem;}
 }
 
@@ -134,7 +134,7 @@ h4 {
 }
 
 .grid img {
-    width: 110%;
+    width: 115%;
 }
 
 .grid li {
@@ -209,7 +209,7 @@ strong {
 }
 
 em {
-    color: rgb(89, 50, 0);
+    color: rgb(117, 67, 0);
 }
 
 .instructions {
@@ -219,7 +219,6 @@ em {
 
 .prep {
     font-size: 1.4rem;
-    margin-bottom: -1.5rem;
 }
 
 @media (max-width:1200px) {
@@ -260,7 +259,6 @@ em {
     .instruction-block {
         width: 80%;
         margin-left: 23%;
-        /* background-color: bisque; */
     }
     
         .instructions {
@@ -290,9 +288,34 @@ em {
 }
 
 @media (max-width: 425px) {
+
+    .ingredients h4 {
+        font-size: 0.85rem;
+    }
+    .ingredients p {
+        font-size: 0.75rem;
+    }
+
+    .grid {
+        width: 80%;
+        margin-left: 9.25%;
+        justify-items: center;
+        margin-top: 1rem;
+        margin-bottom: -1.5rem;
+    }
+
+    .grid img {
+        width: 250%;
+    }
+
+    .star {
+   margin-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+
     .instruction-block {
         width: 80%;
-        margin-left: 19.65%;
+        margin-left: 7.3%;
         /* background-color: bisque; */
     }
     
@@ -318,6 +341,26 @@ em {
         }
     
         .block > div {
-            width: 50%;
+            width: 80%;
         }
 }
+
+/* unvisited link */
+a:link {
+    color: #ff9900;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: rgb(255, 191, 0);
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: lightyellow;
+  }
+  
+  /* selected link */
+  a:active {
+    color: yellow;
+  }
