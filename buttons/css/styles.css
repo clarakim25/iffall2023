@@ -3,19 +3,17 @@ a#btn_cocacola {
     height: 115px;
     box-sizing: border-box;  
     margin: auto;
-    margin-top: 75px;
+    margin-top: 50px;
     text-decoration: none;
 }
 
 img#cocacolacap {
-    width: 45%;
+    width: 60%;
 }
 
 a#btn_cocacola:hover img#cocacolacap{
-    animation-duration: 4s;
+    animation-duration: 1.5s;
     animation-name: spins;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
 }
 
 @keyframes spins {
@@ -23,7 +21,7 @@ a#btn_cocacola:hover img#cocacolacap{
         transform: rotate(0deg);
     }
     to {
-        transform: rotate(180deg);
+        transform: rotate(360deg);
     }
 }
 
@@ -36,13 +34,13 @@ a#btn_harley {
     box-sizing: border-box;
     border-radius: 10px;
     margin: auto;
-    margin-top: 80px;
+    margin-top: 60px;
     padding: 10px 40px 0 40px;
     text-decoration: none;
 }
 
 img#harleylogo {
-    width: 60%;
+    width: 80%;
 }
 
 a#btn_harley:hover img#harleylogo{
@@ -64,176 +62,115 @@ a#btn_harley:hover img#harleylogo{
     100% { transform: translate(1px, -2px) rotate(-0.5deg); }
   }
 
-/*-----------------------------Color Run Button--------------------------------*/
+/*-----------------------------Michael Kors Button--------------------------------*/
 
-a#btn_colorrun {
+a#btn_mk {
     display: inline-block;
-    height: 115px;
-    box-sizing: border-box;  
+    height: 50px;
+    box-sizing: border-box;
+    border-radius: 10px;
     margin: auto;
-    margin-top: 75px;
+    margin-top: 65px;
     padding: 10px 40px 0 40px;
     text-decoration: none;
-    font-family: "lorimer-no-2-condensed", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 20pt;
-    text-transform: uppercase;
-    text-align: left;
-    background-color: black;
-    color: white; 
 }
 
-a#btn_colorrun:hover {
-    background-image: url(https://wainwright.armymwr.com/application/files/5415/6417/7067/Cougar-Color-Run-Rummage-Sale.jpg);
-    background-size: cover;
-    background-repeat: none;
+img#mklogo {
+    width: 60%;
+}
+
+a#btn_mk:hover img#mklogo{
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0.25;
+    }
+
+    100% {
+        opacity: 1;
+     }
 }
 
 /*-----------------------------Ideo Button--------------------------------*/
 
-
-a#btn_ideo {
+a#btn_ideo{
+    display: inline-block;
+    box-sizing: border-box;
+    margin: auto;
+    margin-top: 100px;
+    padding: 10px 10px 10px 10px;
+    color: white;
+    background-color: rgb(232, 0, 0);
+    font-size: 40px;
+    font-family: "scandia-line-web", sans-serif;
+    font-weight: 700;
+    font-style: normal;
     text-decoration: none;
-    height: 500px;
+    transition: background-color 0.5s;
+    place-content: center;
 }
 
-div#redcircle {
-    display: inline-flex;
-    margin:auto;
-    margin-top: 85px;
-    height:70px;
-    width: 70px;
-    background-color: rgb(255, 255, 255);
-    border-radius: 50%;
-    transform: translate(-20%,0%) rotate(-45deg);
-    box-sizing: border-box;
-    border-width: 15px;
-    border-style: solid;
-    border-color: rgb(215, 72, 43);
-    border-bottom-color: rgba(216, 191, 216, 0);
-    border-left-color: transparent;
-    margin-bottom: 0;
-    padding-bottom: 0;
+a#btn_ideo:hover, a#btn_ideo:focus{
+    animation: skew-x-shakeng 1.5s;
+    background-color: white;
+    color: rgb(232, 0, 0);
 }
 
-div#bluecircle {
-    display: inline-flex;
-    text-align: none;
-    margin:auto;
-    margin-top: 85px;
-    height:70px;
-    width: 70px;
-    background-color: rgba(13, 205, 183, 0);
-    border-radius: 150%;
-    transform: translate(20%,0%) rotate(-45deg);
-    box-sizing: border-box;
-    border-width: 15px;
-    border-style: solid;
-    border-color: rgba(13, 205, 183, 0.456);
-    border-bottom-color: rgba(216, 191, 216, 0);
-    border-left-color: transparent; 
-    margin-bottom: 0;
-    padding-bottom: 0;
-}
+@keyframes skew-x-shakeng{
+    0% { transform: skewX(-15deg); }
+    5% { transform: skewX(15deg); }
+    10% { transform: skewX(-15deg); }
+    15% { transform: skewX(15deg); }
+    20% { transform: skewX(0deg); }
+    100% { transform: skewX(0deg); }
+   }
 
-a#btn_ideo:hover div#redcircle {
-    transform: translate(30%,0%) rotate(-45deg);
-    animation-duration: 1s;
-    animation-name: slideleft;
-    animation-iteration-count: 1;
-    animation-direction: alternate;
-}
+/*-----------------------------Cartoon Network Button--------------------------------*/
 
-a#btn_ideo:hover div#bluecircle {
-    transform: translate(-30%,0%) rotate(-45deg);
-    animation-duration: 1s;
-    animation-name: slideright;
-    animation-iteration-count: 1;
-    animation-direction: alternate;
-}
-
-img#ideoname {
-    width: 150px;
-    opacity: 0;
-    transform: translate(0%, -50%);
-}
-
-a#btn_ideo:hover img#ideoname {
-    opacity: 100;
-    animation-duration: 1s;
-    animation-name: slideup;
-    animation-iteration-count: 1;
-    animation-direction: alternate;
-}
-
-@keyframes slideleft {
-    from {
-        transform: translate(-20%,0%) rotate(-45deg);
-    }
-    to {
-        transform: translate(30%,0%) rotate(-45deg);
-    }
-}
-
-@keyframes slideright {
-    from {
-        transform: translate(20%,0%) rotate(-45deg);
-    }
-    to {
-        transform: translate(-30%,0%) rotate(-45deg);
-    }
-}
-
-@keyframes slideup {
-    from {
-        transform: translate(0%, 100%);
-    }
-    to {
-        transform: translate(0%, -50%);
-    }
-}
-
-/*-----------------------------FitBit Button--------------------------------*/
-
-@font-face{
-    font-family: 'seville';
-    src: url('fonts/Seville-Regular.ttf') format('truetype');
-}
-
-a#btn_fitbit {
+a#btn_cn {
     display: inline-block;
     height: 115px;
     box-sizing: border-box;  
     margin: auto;
-    margin-top: 75px;
-    padding-top: 30px;
+    margin-top: 100px;
+    transition: background-color 0.5s;
+}
+
+img#cnlogo {
+    width: 60%;
+}
+
+a#btn_cn:hover img#cnlogo{
+    -webkit-box-shadow:0px 0px 70px 10px rgba(38,255,190,0.91);
+    -moz-box-shadow: 0px 0px 70px 10px rgba(38,255,190,0.91);
+    box-shadow: 0px 0px 70px 10px rgba(38,255,190,0.91);
+}
+
+/*-----------------------------Samsung Button--------------------------------*/
+
+a#btn_samsung {
+    display: inline-block;
+    height: 115px;
+    box-sizing: border-box;  
+    margin: auto;
+    margin-top: 85px;
     text-decoration: none;
-    font-family: seville;
-    font-size: 30pt;
-    color: rgb(5, 37, 40);
 }
 
-img#fitbitlogo {
-    width: 10%;
+img#samsunglogo {
+    width: 55%;
 }
 
-a#btn_fitbit:hover img#fitbitlogo{
-    animation-duration: 2s;
-    animation-name: spins;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+a#btn_samsung:hover img#samsunglogo {
+    transform: scale(1.12);
+    -webkit-transition-property: all;
+    -webkit-transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease;
 }
-
-@keyframes spins {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(520deg);
-    }
-}
-
 /*-----------------------------Tesla Button--------------------------------*/
 
 a#btn_tesla {
@@ -241,176 +178,127 @@ a#btn_tesla {
     height: 115px;
     box-sizing: border-box;  
     margin: auto;
-    margin-top: 75px;
-}
-
-img#teslalogo {
-    width: 50%;
-}
-
-a#btn_tesla:hover img#teslalogo {
-    box-shadow: 0 0 50px rgb(255, 92, 47);
-    animation-duration: 1s;
-    animation-name: glow;
-    animation-iteration-count: 1;
-    animation-direction: alternate;
-}
-
-@keyframes glow {
-    from {
-        transform: scale(100%);
-    }
-    to {
-        transform: scale(120%);
-    }
-}
-
-/*-----------------------------Craigslist Button--------------------------------*/
-
-a#btn_craigslist {
-    display: inline-block;
-    height: 115px;
-    box-sizing: border-box;  
-    margin: auto;
-    margin-top: 100px;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: 200;
-    font-size: 25pt;
-    letter-spacing: 2px;
+    margin-top: 70px;
     text-decoration: none;
 }
 
+img#teslalogo {
+    width: 80%;
+}
 
-a#btn_craigslist:hover .fa-solid.fa-peace {
-    animation-duration: .5s;
+a#btn_tesla:hover img#teslalogo{
+    animation-duration: 2s;
     animation-name: bounce;
     animation-iteration-count: infinite;
-    animation-direction: alternate;
+    
 }
 
 @keyframes bounce {
     from {
-        transform: translate(0%, 0%);
+        transform: translate(0%, -15%);
     }
     to {
-        transform: translate(0%, -60%);
+        transform: translate(0%, 15%);
     }
 }
 
-/*-----------------------------New Yorker Button--------------------------------*/
+/*-----------------------------Nike Button--------------------------------*/
 
-a#btn_newyorker {
-    display: inline-block;
-    height: 115px;
-    box-sizing: border-box;  
-    margin: auto;
-    margin-top: 100px;
+a#btn_nike {
     text-decoration: none;
 }
 
-img#butterfly {
-    width: 5%;
-    transform: translate(10%, -150%);
-}
-
-svg#butterflypath {
-    transform: translate(50%, -50%);
-}
-
-img#man {
-    width: 15%;
-}
-
-img#newyorkerlogo {
+img#nikelogo {
     width: 60%;
+    margin-top: 80px;
 }
 
-/* moving butterfly reference: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_motion_path */
-/* offset path reference: https://developer.mozilla.org/en-US/docs/Web/CSS/offset-path */
-/* offset path reference: https://fullystacked.net/posts/offset-path/ */
-
-a#btn_newyorker:hover img#butterfly {
-    animation-duration: .5s;
-    animation-name: float;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-}
-
-@keyframes float {
-    from {
-        transform: translate(10%, -150%) rotate(45);
-    }
-    to {
-        transform: translate(15%, -300%) rotate(-45deg);
-    }
-}
-
-/*-----------------------------Apple Button--------------------------------*/
-
-a#btn_apple {
-    display: inline-block;
-    height: 115px;
-    box-sizing: border-box;  
-    margin: auto;
-    margin-top: 75px;
-    text-decoration: none;
-}
-
-img#applelogo {
-    width: 30%;
-    transform: translate(50%, 0%);
-}
-
-img#rainbowapple {
-    transform: translate(-55%, 0%);
-    width: 30%;
-    opacity: 0;
-}
-
-a#btn_apple:hover img#rainbowapple {
-    opacity: 100;
-    animation-duration: 1s;
-    animation-name: colorchange;
-    animation-iteration-count: 1;
-    animation-direction: alternate;
-}
-
-a#btn_apple:hover img#applelogo {
-    opacity: 0;
-}
-
-
-@keyframes colorchange {
-    from {
-        transform: translate(-55%, 0%) scale(100%);
-    }
-    to {
-        transform: translate(-55%, 0%) scale(120%);
-    }
-}
-
-/*-----------------------------Facebook Button--------------------------------*/
-
-a#btn_facebook {
-    color: #1877F2;
-    font-family: helvetica;
-    font-size: 20pt;
-    display: inline-block;
-	height: 50px;
-    width: 200px;
-	box-sizing: border-box;
-	border-radius: 10px;
-	margin: auto;
-	margin-top: 110px;
-    text-decoration: none;
-    background-color: rgb(255, 255, 255);
-    border: 2px solid #1877F2;
-    padding: 7px 40px 0 40px;
-}
-
-a#btn_facebook:hover {
-    background-color:#1877F2;
+a#btn_nike span {
+    margin-top: -70px;
     color: white;
-    font-weight: bolder;
+    background-color: black;
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: 25pt;
+    font-weight: 1000;
+    letter-spacing: -3px;
+    text-decoration: none;
+    display: none;
 }
 
+a#btn_nike:hover img {
+    opacity: 0;
+    animation: 1.5s;
+    background-color: white;
+}
+
+a#btn_nike:hover span {
+    display: block;
+}
+
+/*-----------------------------Foreflight Button--------------------------------*/
+
+a#btn_frf {
+    display: inline-block;
+    height: 50px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 95px;
+    padding: 10px 40px 0 40px;
+    text-decoration: none;
+    color: navy;
+    font-size: 27px;
+    font-family: "itc-avant-garde-gothic-pro", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+img#frflogo {
+    width: 20%;
+}
+
+
+a#btn_frf:hover img{
+    animation: fly 0.6s ease forwards;
+  }
+  @keyframes fly {
+    16.6% { transform: translate(50px, -60px) rotate(-60deg); }
+    33.33% { transform: translate(50px, -100px) rotate(-120deg); }
+    49.8% { transform: translate(0, -120px) rotate(-180deg); }
+    66.4% { transform: translate(-50px, -100px) rotate(-240deg); }
+    83% { transform: translate(-50px, -50px) rotate(-300deg); }
+    100% { transform: translate(0, 0) rotate(-360deg); }
+  }
+/*-----------------------------Exploding Kittens Button--------------------------------*/
+
+a#btn_expkit {
+    display: inline-block;
+    height: 50px;
+    box-sizing: border-box;
+    border-radius: 25px;
+    margin: auto;
+    margin-top: 50px;
+    padding: 10px 40px 0 40px;
+    text-decoration: none;
+}
+
+img#expkitlogo {
+    width: 70%;
+
+}
+
+a#btn_expkit:hover img{
+    animation-duration: 0.75s;
+    animation-name: slidein;
+   
+}
+
+@keyframes slidein {
+    from {
+        transform: translate(0%, 0%) scale(1.5);
+    }
+    to {
+        transform: translate(0%, -500%) scale(1.5);
+    }
+}
