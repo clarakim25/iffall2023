@@ -13,8 +13,6 @@ font-style: normal;
    padding: 0;
   }
 
-
-
 h1 {
     margin-top: 2.5rem;
     line-height: 1em;
@@ -95,6 +93,7 @@ a:link {
     height: 30rem;
     float: right;
     margin-right: -1rem;
+    margin-top: 3rem;
   }
 
   a#btn_cocacola {
