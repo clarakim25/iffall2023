@@ -1,0 +1,213 @@
+
+html {
+    background-color: black;
+    color: white;
+    font-size: 25px;
+    width: 100vw;
+}
+
+body {
+    font-family: 'Exo', sans-serif;
+font-weight: 400;
+font-style: normal;
+   margin:0;
+   padding: 0;
+  }
+
+h1 {
+    margin-top: 2.5rem;
+    line-height: 1em;
+    text-align: left;
+    font-size: 13rem;
+    display: block;
+    font-family: 'Gayathri', sans-serif;
+    color:white;
+    text-transform: uppercase;
+    display: block;
+  }
+  
+  h2 {
+    font-family: 'Gayathri', sans-serif;
+    font-size: 130px;
+    display: block;
+
+}
+
+.browse p{
+    font-family: 'Gayathri', sans-serif;
+    float: right;
+    font-size: 2rem;
+    display: block;
+    margin-right: 25%
+
+}
+
+#glow {
+
+  -webkit-animation: glow 3s ease-in-out infinite alternate;
+  -moz-animation: glow 3s ease-in-out infinite alternate;
+  animation: glow 3s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+
+  }
+  to {
+    text-shadow: 0 0 0px white, 0 0 10px white, 0 0 10px white, 0 0 10px white, 
+                 0 0 10px white, 0 0 10px white, 0 0 10px white;
+  }
+}
+a {
+  text-decoration: none;
+}
+
+p {
+    margin-top: 4rem;
+    display: block;
+
+}
+
+img {
+    display: block;
+}
+
+a:link {
+  color: white;
+}
+
+  /* mouse over link */
+  a:hover {
+    color: yellow;
+  }
+  
+  /* selected link */
+  a:active {
+    color: white;
+  }
+
+  a:visited {
+    color: white;
+  }
+
+
+
+
+  .button_container {
+    /* width: 30rem;
+    height: 30rem;
+    float: right;
+    margin-right: 8rem;
+    margin-top: 3rem; */
+        margin: auto;
+  }
+
+  a#btn_cocacola {
+    display: inline-block;
+    box-sizing: border-box;  
+    margin: auto;
+    text-decoration: none;
+    
+}
+
+img#cocacolacap {
+    width: 80%;
+    margin: auto;
+    margin-top: 5%;
+    
+}
+
+a#btn_cocacola:hover img#cocacolacap{
+    animation-duration: 1.5s;
+    animation-name: spins;
+    animation-iteration-count: infinite;
+}
+
+@keyframes spins {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+body {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns with equal width */
+}
+
+.left {
+  margin-left: 3em;
+  margin-top: 1.5em;
+}
+
+@media (max-width: 1500px) and (min-width: 1043px) {
+
+  html {
+    font-size: 20px;
+  }
+  h1 {
+    font-size: 11rem;
+  }
+
+
+}
+
+@media (max-width: 1042px) and (min-width: 768px) {
+  body {
+      grid-template-columns: 1fr; /* Switch to a single column layout */
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 8.25rem;
+  }
+
+  .left {
+    margin-left: 0;
+  }
+
+  .browse p{
+    text-align: center;
+    margin-right: 37%
+}
+
+img#cocacolacap {
+  margin-top: -3rem;
+  }
+
+  
+}
+
+@media (max-width: 767px) {
+
+  html{
+font-size: 18px
+  }
+  body {
+      grid-template-columns: 1fr; /* Switch to a single column layout */
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 8rem;
+  }
+
+  .left {
+    margin-left: 0;
+  }
+
+  .browse p{
+    text-align: center;
+    font-size: 1.5rem;
+    margin-right: 37.5%
+}
+
+img#cocacolacap {
+  margin-top: -3rem;
+  }
+  
+  
+}
