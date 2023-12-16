@@ -2,7 +2,7 @@
 	html {
 		background-color: black;
 		color: white;
-		font-size: 1.5em;
+		font-size: 1.25em;
 	}
 	
 	body {
@@ -233,50 +233,6 @@ display: block;
 	margin: auto
    }
 
-   @media (max-width: 1042px) {
-
-	html{
-		font-size: 20px;
-	}
-
-	.title {
-	  text-align: center;
-	  margin-left: 9%;
-	  font-size: 7rem;
-	  width: 80%;
-	}
-  }
-
-  @media (max-width: 425px) {
-
-	html{
-		font-size: 18px;
-	}
-
-	.title {
-		text-align: center;
-		margin-left: 9%;
-		font-size: 7rem;
-		width: 80%;
-  }
-}
-
-  @media (max-width: 425px) {
-
-	html{
-		font-size: 16px;
-	}
-
-	h1{
-		text-align: center;
-	}
-
-	.title {
-	  text-align: center;
-	  font-size: 5rem;
-	  width: 80%;
-	}
-  }
 
 
 #glow {
@@ -298,4 +254,144 @@ display: block;
 a {
   text-decoration: none;
   color:white;
+}
+
+@media (max-width: 1010px) {
+
+	.title {
+	  text-align: center;
+	  margin-left: 10%;
+	  font-size: 7rem;
+	  width: 80%;
+		
+  }
+
+  .des {
+	font-size: 0.6rem;
+}
+
+html{
+	width: 100vw;
+}
+
+}
+
+@media (max-width: 1042px) {
+
+    html{
+      font-size: 20px;
+    }
+  
+    .title {
+      text-align: center;
+      margin-left: 10%;
+      width: 80%;
+    }
+
+    h1 {
+      font-size: 7rem;
+    }
+    html{
+      width: 100vw;
+    }
+    }
+  
+    @media (max-width: 700px) {
+
+  
+    .title {
+      text-align: center;
+      margin-left: 10%;
+      width: 80%;
+    }
+
+    h1 {
+      font-size: 6rem;
+    }
+
+	h2 {
+		font-size: 5rem;
+	  }
+
+    p{
+      font-size: 0.75rem;
+    }
+
+  }
+
+  @media (max-width: 550px) {
+
+    .title {
+      text-align: center;
+      margin-left: 10%;
+      width: 80%;
+    }
+  
+    h1 {
+      font-size: 4rem;
+	  padding-top: 0;
+    }
+
+	h2 {
+		font-size: 3rem;
+	  }
+
+	h3 {
+
+		margin-top: 0px;
+	}
+    p{
+      font-size: 0.75rem;
+    }
+
+	.start {
+		padding-top: 4rem;
+	}
+
+    ul.nav {
+
+      font-size: 0.6rem;
+
+	}
+  }
+
+  @media (max-width: 375px) {
+
+    .title {
+      text-align: center;
+      margin-left: 10%;
+      width: 80%;
+    }
+  
+    h1 {
+      font-size: 3rem;
+      padding-top: 0;
+    }
+
+	h2 {
+		font-size: 2rem;
+	  }
+
+	h3 {
+		font-size: 1.75rem;
+		margin-top: 0px;
+	}
+
+    p{
+      font-size: 0.75rem;
+    }
+
+    ul.nav {
+
+      font-size: 0.5rem;
+      list-style-type: none;
+      margin-left: -1em;
+      overflow: hidden;
+      position: fixed;
+      width: 100%;
+      text-decoration: none;
+      top: -22px;
+      left: -25px;
+      width: 100%;
+  }
 }
